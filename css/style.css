@@ -301,3 +301,9 @@ margin:15px auto;
 line-height:1.7;
 font-size:17px;
 }
+.profile-img{
+width:180px;
+border-radius:50%;
+margin-bottom:20px;
+border:4px solid #00adb5;
+}
