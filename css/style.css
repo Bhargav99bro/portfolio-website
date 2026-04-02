@@ -248,3 +248,62 @@ body.light-mode .hero {
   cursor: pointer;
   color: white;
 }
+/* ===== ANIMATIONS ===== */
+
+/* Section fade-in */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth hover for buttons */
+.btn {
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Project hover effect */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* Featured project animation */
+.project-highlight {
+  transition: 0.4s ease;
+}
+
+.project-highlight:hover {
+  transform: scale(1.02);
+}
+
+/* Skills hover animation */
+.skill {
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+/* Profile image glow */
+.profile-img {
+  transition: 0.4s;
+}
+
+.profile-img:hover {
+  box-shadow: 0 0 25px rgba(0,255,255,0.6);
+}

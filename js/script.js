@@ -6,7 +6,7 @@ let i = 0;
 function typing(){
     if(document.getElementById("typing")){
         if(i < text.length){
-            document.getElementById("typing").innerHTML += text.charAt(i);
+            document.getElementById("typing").textContent += text.charAt(i);
             i++;
             setTimeout(typing,80);
         }
@@ -36,19 +36,13 @@ card.className = "project-card";
 
 card.innerHTML=`
 
-<div class="project-images">
-
-<img src="assets/images/projects/sorting1.png" class="project-img">
-
-<img src="assets/images/projects/sorting2.png" class="project-img">
-
-</div>
-
 <h3>${repo.name}</h3>
 
 <p>${repo.description.replace("#portfolio","")}</p>
 
-<a href="${repo.html_url}" target="_blank">View Project</a>
+<div class="project-links">
+<a href="${repo.html_url}" target="_blank" class="btn">GitHub</a>
+</div>
 
 `;
 container.appendChild(card);
