@@ -307,3 +307,42 @@ section.show {
 .profile-img:hover {
   box-shadow: 0 0 25px rgba(0,255,255,0.6);
 }
+/* Hero floating animation */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero-content {
+  animation: float 4s ease-in-out infinite;
+}
+.profile-img {
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+.profile-img:hover {
+  box-shadow: 0 0 35px rgba(0,255,255,0.7);
+}
+.hero h1 {
+  text-shadow: 0 0 15px rgba(0,255,255,0.4);
+}
+.hero {
+  background: linear-gradient(270deg, #1e3a8a, #0ea5e9, #38bdf8);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
